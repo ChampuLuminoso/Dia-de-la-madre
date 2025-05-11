@@ -2,33 +2,131 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Para mi mamá</title>
+  <title>Feliz Día, Mamá</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #fff4f4;
-      color: #333;
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-image: url('https://i.imgur.com/HlqDoWx.jpg'); /* Fondo floral pastel */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #2e2e2e;
       text-align: center;
-      padding: 30px;
+      padding: 40px 20px;
+      overflow-x: hidden;
     }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      max-width: 700px;
+      margin: auto;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #e60073;
+    }
+
     img {
       max-width: 90%;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-    .mensaje {
+      border-radius: 15px;
       margin-top: 20px;
-      font-size: 1.2em;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .mensaje-nube {
+      background: #ffffffdd;
+      border-radius: 60% 60% 50% 50% / 60% 60% 40% 40%;
+      padding: 30px;
+      margin-top: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #333;
+      animation: flotar 6s ease-in-out infinite;
+    }
+
+    @keyframes flotar {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .icono {
+      font-size: 2em;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    /* ❤️ corazones cayendo */
+    .corazon {
+      position: fixed;
+      top: -50px;
+      font-size: 24px;
+      animation: caer 8s linear infinite;
+      opacity: 0.6;
+      z-index: 0;
+    }
+
+    @keyframes caer {
+      0% { transform: translateY(-50px) translateX(0); opacity: 0.6; }
+      100% { transform: translateY(100vh) translateX(30px); opacity: 0; }
     }
   </style>
 </head>
 <body>
-  <h1>Feliz Día de las Madres ❤️</h1>
-  <img src="URL_DE_TU_FOTO" alt="Foto especial">
-  <div class="mensaje">
-    <p>Mamá, gracias por todo lo que haces por mí. Este mensaje es solo un pequeño reflejo de cuánto te quiero y valoro. 💐</p>
-    <p>Con mucho amor,</p>
-    <p>Tu [hijo/hija] programador/a 💻</p>
+  <!-- Corazones flotantes (puedes duplicar o mover) -->
+  <div class="corazon" style="left: 10%;">💖</div>
+  <div class="corazon" style="left: 25%; animation-delay: 2s;">💖</div>
+  <div class="corazon" style="left: 40%; animation-delay: 4s;">💖</div>
+  <div class="corazon" style="left: 60%; animation-delay: 1s;">💖</div>
+  <div class="corazon" style="left: 80%; animation-delay: 3s;">💖</div>
+
+  <div class="card">
+    <div class="icono">🩺🌷</div>
+    <h1>Feliz Día de las Madres</h1>
+
+    <div class="mensaje-nube">
+      Mamá, gracias...<br><br>
+
+      Gracias por darme la confianza para demostrarte que estoy cambiando, que poco a poco me convierto en la mejor versión de mí mismo.<br><br>
+
+      Hace mucho que no te deseaba un feliz Día de las Madres… así que aquí estoy, con el corazón lleno de gratitud.<br><br>
+
+      Gracias por tener la paciencia de esperarme mientras aprendía a madurar, a crecer, a imaginar un futuro, a soñar con una vida distinta.  
+      Una vida que hoy puedo comenzar en otro país —un sueño que jamás habría sido posible sin ti.<br><br>
+
+      Gracias por dejarme vivir, por dejarme ser feliz, por darme el espacio y el valor para construir la vida que quiero.<br><br>
+
+      No podría haber elegido una mejor mamá para caminar a mi lado en este sendero desconocido, que tantas veces me ha dado miedo.  
+      Pero tú siempre estuviste ahí: tomándome la mano, empujándome a seguir, impulsándome a mejorar, a no rendirme.<br><br>
+
+      Si tuviera que definir lo que significa la perfección, el esfuerzo, el trabajo duro y la dedicación, no buscaría en un diccionario… pensaría en ti.<br><br>
+
+      Gracias, Silvia.<br>
+      Por ser mi madre, mi ejemplo y mi refugio.<br>
+      💖 Te quiero con todo mi corazón. 💖<br><br>
+
+      — Tu hijo programador 👨‍💻
+    </div>
+
+    <img src="https://imgur.com/a/s5Ru03A" alt="Gracias, mamá">
+
+    <footer>
+      Hecho con amor, sudor, saliva, alma y por supuesto algo de código ❤️
+    </footer>
   </div>
 </body>
 </html>
