@@ -9,7 +9,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Quicksand', sans-serif;
-      background-image: url('https://i.imgur.com/xeWY6NA.jpeg'); /* ESTA es la imagen de fondo */
+      background-image: url('https://i.imgur.com/xeWY6NA.jpeg'); /* Fondo pastel */
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -83,6 +83,27 @@
       0% { transform: translateY(-50px) translateX(0); opacity: 0.6; }
       100% { transform: translateY(100vh) translateX(30px); opacity: 0; }
     }
+
+    .musica {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 40px;
+    }
+
+    .musica img {
+      width: 50px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .musica a {
+      text-decoration: none;
+      color: #1DB954;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
   </style>
 </head>
 <body>
@@ -121,8 +142,15 @@
       — Tu hijo programador 👨‍💻
     </div>
 
-    <!-- Imagen del mensaje (distinta al fondo) -->
-    <img src="https://i.imgur.com/qrplkg0.jpeg" alt="Gracias, mamá">
+    <img src="https://i.imgur.com/qrplkg0.jpeg" alt="Gracias">
+
+    <!-- Música sugerida -->
+    <div class="musica">
+      <img src="https://i.scdn.co/image/ab67616d00001e02215e8c9602d0589b3efedb72" alt="Una Mattina">
+      <a href="https://open.spotify.com/track/2b8E2qGzPQtQ9nP0YOXh6J" target="_blank">
+        ▶️ Una Mattina – Ludovico Einaudi
+      </a>
+    </div>
 
     <footer>
       Hecho con amor, sudor, saliva, alma y por supuesto algo de código ❤️
